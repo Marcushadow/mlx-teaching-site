@@ -19,7 +19,7 @@ export function Playground({ initialCode }: PlaygroundProps) {
   // Animation state
   const [activeNodeIds, setActiveNodeIds] = useState<Set<string>>(new Set())
   const [isAnimating, setIsAnimating] = useState(false)
-  const [animationStep, setAnimationStep] = useState(0)
+  const [, setAnimationStep] = useState(0)
   const animationTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const executionOrderRef = useRef<string[]>([])
   const hasEvalNodes = useRef(false)

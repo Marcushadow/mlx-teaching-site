@@ -23,7 +23,7 @@ const variants = {
 
 const transition = {
   type: 'tween' as const,
-  ease: 'easeInOut',
+  ease: 'easeInOut' as const,
   duration: 0.35,
 }
 

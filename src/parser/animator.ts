@@ -8,7 +8,7 @@ import type { Node, Edge } from '@xyflow/react'
  * Returns node IDs in topological order: sources first, eval node last.
  */
 export function computeExecutionOrder(
-  nodes: Node[],
+  _nodes: Node[],
   edges: Edge[],
   evalNodeId: string
 ): string[] {
