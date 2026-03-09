@@ -7,3 +7,8 @@
 #root {
   font-size: calc(var(--slide-font-size) * 1rem);
 }
+
+/* Monaco editor line highlight for node hover */
+.highlighted-line {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+}
