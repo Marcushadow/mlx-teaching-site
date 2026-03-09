@@ -82,11 +82,11 @@ export function buildGraph(lines: ParsedLine[]): GraphResult {
     }
 
     // Create edges from arguments that reference known variables
-    for (const arg of line.args) {
-      const sourceNodeId = variableToNodeId.get(arg)
+    for (let i = 0; i < line.args.length; i++) {
+      const sourceNodeId = variableToNodeId.get(line.args[i])
       if (sourceNodeId) {
         edges.push({
-          id: `${sourceNodeId}->${nodeId}`,
+          id: `${sourceNodeId}->${nodeId}_${i}`,
           source: sourceNodeId,
           target: nodeId,
         })
