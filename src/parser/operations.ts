@@ -11,7 +11,7 @@ export const MLX_OPS: Record<string, OpDefinition> = {
   'mx.subtract': { name: 'mx.subtract', inputs: 2,  category: 'op',      label: 'subtract' },
   'mx.multiply': { name: 'mx.multiply', inputs: 2,  category: 'op',      label: 'multiply' },
   'mx.matmul':   { name: 'mx.matmul',   inputs: 2,  category: 'op',      label: 'matmul' },
-  'mx.reshape':  { name: 'mx.reshape',  inputs: 1,  category: 'op',      label: 'reshape' },
+  'mx.reshape':  { name: 'mx.reshape',  inputs: 2,  category: 'op',      label: 'reshape' },
   'mx.exp':      { name: 'mx.exp',      inputs: 1,  category: 'op',      label: 'exp' },
   'mx.log':      { name: 'mx.log',      inputs: 1,  category: 'op',      label: 'log' },
   'mx.sum':      { name: 'mx.sum',      inputs: 1,  category: 'op',      label: 'sum' },

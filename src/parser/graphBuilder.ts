@@ -65,7 +65,7 @@ export function buildGraph(lines: ParsedLine[]): GraphResult {
     // Create the node
     const node: Node = {
       id: nodeId,
-      type: 'default',
+      type: opDef.category,
       position: { x: 0, y: 0 }, // will be overwritten by layout
       data: {
         label: opDef.label,
