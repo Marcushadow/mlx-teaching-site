@@ -61,9 +61,11 @@ export function SlideContainer({ slides }: SlideContainerProps) {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Ignore key events when typing in input elements
-      const tag = (e.target as HTMLElement).tagName
+      // Ignore key events when typing in input elements or Monaco Editor
+      const target = e.target as HTMLElement
+      const tag = target.tagName
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return
+      if (target.closest('.monaco-editor')) return
 
       switch (e.key) {
         case 'ArrowRight':
